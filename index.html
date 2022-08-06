@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>foodena // Search over 1,000,000 recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container big">
+      <div class="left">
+        <svg
+          version="1.1"
+          id="transring"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 414 414"
+          style="enable-background: new 0 0 414 414"
+          xml:space="preserve"
+        >
+          <path
+            id="Transparent_Ring"
+            class="transrg"
+            style="
+              opacity: 0.4;
+              fill: none;
+              stroke: #ffffff;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              enable-background: new;
+            "
+            d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                  c-47.8,0-91-19.4-122.3-50.7"
+          ></path>
+
+          <path
+            id="Opaque_Ring"
+            class="transrgwht"
+            stroke-dasharray="0,1000"
+            style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke-dasharray: 10, 1000;
+            "
+            d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                  c-47.8,0-91-19.4-122.3-50.7"
+          ></path>
+
+          <g id="Dots1" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill1"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro1"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots2" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill2"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro2"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots3" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill3"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro3"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots4" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill4"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro4"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots5" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill5"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro5"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots6" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill6"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro6"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots7" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill7"
+                style="fill: rgb(0, 146, 255); opacity: 1"
+                d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dotsstro7"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                "
+                d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h1 class="section-heading-main">25+ Downloads</h1>
+            <h3 class="section-heading-sub">on appstore & google playstore</h3>
+          </div>
+        </div>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h3 class="section-heading-sub">The Next Big</h3>
+            <h1 class="section-heading-main">Blockchain</h1>
+            <h3 class="section-heading-sub">revolution</h3>
+          </div>
+        </div>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h3 class="section-heading-sub">Powered by advance</h3>
+            <img src="/images/nasa-mobile-app.png" />
+            <h3 class="section-heading-sub">algorithms</h3>
+          </div>
+        </div>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h3 class="section-heading-sub">Redifing</h3>
+            <h1 class="section-heading-main">UX Strategy</h1>
+            <h3 class="section-heading-sub">and UI design</h3>
+          </div>
+        </div>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h3 class="section-heading-sub">Developing ERP Solution for</h3>
+            <h1 class="section-heading-main">Text Headline</h1>
+            <h3 class="section-heading-sub">in future industry</h3>
+          </div>
+        </div>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h3 class="section-heading-sub">Developing ERP Solution for</h3>
+            <h1 class="section-heading-main">Text Headline</h1>
+            <h3 class="section-heading-sub">in future industry</h3>
+          </div>
+        </div>
+        <div class="section-heading">
+          <div class="section-heading-content">
+            <h3 class="section-heading-sub">Biggest Classifieds</h3>
+            <h1 class="section-heading-main">East Asia</h1>
+            <h3 class="section-heading-sub">Countries</h3>
+          </div>
+        </div>
+        <div class="left-main">
+          <img
+            class="section-heading-img section-heading-img-1"
+            src="/images/world-communication-awards-for-best-digital-experience.png"
+            alt="pi"
+          />
+          <img
+            class="section-heading-img section-heading-img-7"
+            src="/images/mobile-app-of-the-year-by-entrepreneur.png"
+            alt="pi"
+          />
+          <div class="left-content">
+            <div class="left-heading">ABC 123</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-heading">ABC 234</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-heading">ABC 345</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-heading">ABC 456</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-heading">ABC 567</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-heading">ABC 678</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-heading">ABC 789</div>
+            <p>
+              We are the best<br />
+              web develeopement company <br />in the world
+            </p>
+            <div class="left-actions">
+              <button>View case study &#8594;</button>
+              <button class="left-skip">SKIP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="section" id="section-0">
+          <div class="section-content section-content-1">
+            <img
+              src="/images/nexgtv-entertainment-mobile-app-development.png"
+              alt="po"
+            />
+            <img src="/images/nexgtv-mobile-app-ui-design.png" alt="pl" />
+          </div>
+        </div>
+        <div class="section" id="section-1">
+          <div class="section-content section-content-2">
+            <img src="/images/veme-blockchain-app-developed.png" alt="po" />
+            <img src="/images/veme-app-ui-design.png" alt="pl" />
+          </div>
+        </div>
+        <div class="section" id="section-2">
+          <div class="section-content section-content-3">
+            <img src="/images/nasa-fitness-tracking-mobile-app.png" alt="po" />
+            <img
+              src="/images/measure-total-body-weight-through-fitness-app.png"
+              alt="pl"
+            />
+          </div>
+        </div>
+        <div class="section" id="section-3">
+          <div class="section-content section-content-4">
+            <img
+              class="section-content-4-topleft"
+              src="/images/pizza_box.png"
+            />
+            <img
+              class="section-content-4-bottom"
+              src="/images/domi-img1.png"
+              alt="po"
+            />
+            <img
+              class="section-content-4-top"
+              src="/images/ux-strategy-for-mobile-app-devlopment.png"
+              alt="pl"
+            />
+            <img
+              class="section-content-4-topright"
+              src="/images/dominos-bread.png"
+              alt="b"
+            />
+            <img
+              class="section-content-4-bottomright"
+              src="/images/dominos-bread1.png"
+              alt="b"
+            />
+          </div>
+        </div>
+        <div class="section" id="section-4">
+          <div class="section-content section-content-5">
+            <img
+              class="section-content-5-top1"
+              src="/images/karavan-social-networking-app-screen.png"
+            />
+            <img
+              class="section-content-5-top2"
+              src="/images/social-networking-app-case-study.png"
+            />
+            <img
+              class="section-content-5-center"
+              src="/images/developers-for-social-media-app.png"
+            />
+            <img
+              class="section-content-5-bottom1"
+              src="/images/karavan_2.png"
+            />
+            <img
+              class="section-content-5-bottom2"
+              src="/images/karavan-social-networking-app-screen-2.png"
+            />
+          </div>
+        </div>
+        <div class="section section-content-6" id="section-5">
+          <img src="/images/erp-app-development-service.png" alt="po" />
+        </div>
+        <div class="section" id="section-6">
+          <div class="section-content section-content-7">
+            <img src="/images/melltoo-img2.png" alt="pl" />
+            <img src="/images/melltoo-img1.png" alt="po" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <section>
+            <div class="figure figure-1">
+              <img
+                src="/images/nexgtv-entertainment-mobile-app-development.png"
+                alt="po"
+              />
+              <img src="/images/nexgtv-mobile-app-ui-design.png" alt="pl" />
+            </div>
+            <div class="section-mid">
+              <img
+                src="/images/world-communication-awards-for-best-digital-experience.png"
+                alt="pi"
+              />
+            </div>
+
+            <div class="caption">
+              <h1>ABC 1</h1>
+              <p>this is sample text for ABC 1</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+        <div class="item">
+          <section>
+            <div class="figure figure-2">
+              <img src="/images/veme-blockchain-app-developed.png" alt="po" />
+              <img src="/images/veme-app-ui-design.png" alt="pl" />
+            </div>
+            <div class="caption">
+              <h1>ABC 2</h1>
+              <p>this is sample text for ABC 2</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+        <div class="item">
+          <section>
+            <div class="figure figure-3">
+              <img
+                src="/images/nasa-fitness-tracking-mobile-app.png"
+                alt="po"
+              />
+              <img
+                src="/images/measure-total-body-weight-through-fitness-app.png"
+                alt="pl"
+              />
+            </div>
+            <div class="caption">
+              <h1>ABC 3</h1>
+              <p>this is sample text for ABC 3</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+        <div class="item">
+          <section>
+            <div class="figure figure-4">
+              <img src="/images/pizza_box.png" />
+              <img src="/images/domi-img1.png" alt="po" />
+              <img
+                src="/images/ux-strategy-for-mobile-app-devlopment.png"
+                alt="pl"
+              />
+
+              <img src="/images/dominos-bread1.png" alt="b" />
+              <img src="/images/dominos-masala.png" alt="m" />
+              <img
+                src="/images/on-demand-app-development-company.png"
+                alt="m"
+              />
+            </div>
+            <div class="caption">
+              <h1>ABC 4</h1>
+              <p>this is sample text for ABC 4</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+        <div class="item">
+          <section>
+            <div class="figure figure-5">
+              <img src="/images/karavan-social-networking-app-screen.png" />
+              <img src="/images/social-networking-app-case-study.png" />
+              <img src="/images/developers-for-social-media-app.png" />
+              <img src="/images/karavan_2.png" />
+              <img src="/images/karavan-social-networking-app-screen-2.png" />
+            </div>
+            <div class="caption">
+              <h1>ABC 5</h1>
+              <p>this is sample text for ABC 5</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+        <div class="item">
+          <section>
+            <div class="figure figure-6">
+              <img src="/images/erp-app-development-service.png" alt="po" />
+            </div>
+            <div class="caption">
+              <h1>ABC 6</h1>
+              <p>this is sample text for ABC 6</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+        <div class="item">
+          <section>
+            <div class="figure figure-7">
+              <img src="/images//melltoo-img2.png" alt="pl" />
+              <img src="/images/melltoo-img1.png" alt="po" />
+            </div>
+            <div class="section-mid">
+              <img
+                src="/images/mobile-app-of-the-year-by-entrepreneur.png"
+                alt="pi"
+              />
+            </div>
+
+            <div class="caption">
+              <h1>ABC 7</h1>
+              <p>this is sample text for ABC 7</p>
+              <button>view case study</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
