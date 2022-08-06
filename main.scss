@@ -303,7 +303,7 @@ section {
 }
 .figure {
   height: 60%;
-  background-color: aqua;
+
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -424,7 +424,7 @@ section {
     }
   }
   &-6 {
-    background-image: url("/images/interior.jpg");
+    background-image: url("images/interior.jpg");
     background-position: center;
     background-size: cover;
     img {
